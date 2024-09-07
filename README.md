@@ -19,35 +19,35 @@ The simulation starts by initializing the setup, goes through each iteration ste
 
 The program takes a configuration file in JSON format as input. The file contains information about parties, the graph, and agents. The structure of the configuration file is as follows:  
 
-{
-  "parties": [
-    {
-      "name": "Party1",
-      "mandates": 30,
-      "join_policy": "MandatesJoinPolicy"
-    },
-    {
-      "name": "Party2",
-      "mandates": 40,
-      "join_policy": "LastOfferJoinPolicy"
-    },
-    ...
-  ],
-  "graph": [
-    [0, 1, 0, 1],
-    [1, 0, 1, 0],
-    [0, 1, 0, 1],
-    [1, 0, 1, 0]
-  ],
-  "agents": [
-    {
-      "party_id": 0,
-      "selection_policy": "EdgeWeightSelectionPolicy"
-    },
-    {
-      "party_id": 1,
-      "selection_policy": "MandatesSelectionPolicy"
-    },
-    ...
-  ]
-}
+{  
+  "parties": [  
+    {  
+      "name": "Party1",  
+      "mandates": 30,  
+      "join_policy": "MandatesJoinPolicy"  
+    },  
+    {  
+      "name": "Party2",  
+      "mandates": 40,  
+      "join_policy": "LastOfferJoinPolicy"  
+    },  
+    ...  
+  ],  
+  "graph": [  
+    [0, 1, 0, 1],  
+    [1, 0, 1, 0],  
+    [0, 1, 0, 1],  
+    [1, 0, 1, 0]  
+  ],  
+  "agents": [  
+    {  
+      "party_id": 0,  
+      "selection_policy": "EdgeWeightSelectionPolicy"  
+    },  
+    {  
+      "party_id": 1,  
+      "selection_policy": "MandatesSelectionPolicy"  
+    },  
+    ...  
+  ]  
+}  
