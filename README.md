@@ -11,4 +11,4 @@ The task involves designing and implementing several key classes to model the in
 5. Agent: Represents an agent affiliated with a specific party, with properties like agentId, partyId, and selection policy.  
 6. SelectionPolicy: An abstract class that defines how an agent selects which party to approach.  
 7. JoinPolicy: An abstract class that outlines the logic for deciding which coalition offers to accept.  
-8. The simulation starts by initializing the setup, goes through each iteration step by step, and terminates when the conditions for coalition formation are met.  
+The simulation starts by initializing the setup, goes through each iteration step by step, and terminates when the conditions for coalition formation are met.  
