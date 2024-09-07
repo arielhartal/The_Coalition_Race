@@ -13,3 +13,41 @@ The task involves designing and implementing several key classes to model the in
 7. JoinPolicy: An abstract class that outlines the logic for deciding which coalition offers to accept.
 
 The simulation starts by initializing the setup, goes through each iteration step by step, and terminates when the conditions for coalition formation are met.  
+
+
+# Configuration File Format
+
+The program takes a configuration file in JSON format as input. The file contains information about parties, the graph, and agents. The structure of the configuration file is as follows:  
+
+{
+  "parties": [
+    {
+      "name": "Party1",
+      "mandates": 30,
+      "join_policy": "MandatesJoinPolicy"
+    },
+    {
+      "name": "Party2",
+      "mandates": 40,
+      "join_policy": "LastOfferJoinPolicy"
+    },
+    ...
+  ],
+  "graph": [
+    [0, 1, 0, 1],
+    [1, 0, 1, 0],
+    [0, 1, 0, 1],
+    [1, 0, 1, 0]
+  ],
+  "agents": [
+    {
+      "party_id": 0,
+      "selection_policy": "EdgeWeightSelectionPolicy"
+    },
+    {
+      "party_id": 1,
+      "selection_policy": "MandatesSelectionPolicy"
+    },
+    ...
+  ]
+}
