@@ -52,4 +52,19 @@ The program takes a configuration file in JSON format as input. The file contain
   ]  
 }
 ```
+# Termination Conditions
+
+The program terminates when one of the coalitions reaches at least 61 mandates or when all parties have joined a coalition.
+
+# Output
+
+The program generates an output file in JSON format, representing the state of the simulation. The output file contains information about the parties, agents, coalitions, and the steps taken during the simulation.
+
+# Testing
+
+Three JSON files are provided for testing different scenarios of the program. You can compare the expected output with your actual output using the diff command in Linux.  
+```cpp
+diff expected_output.json actual_output.json
+```
+
 
