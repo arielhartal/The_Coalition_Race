@@ -4,7 +4,7 @@ This project is a C++ simulation of a political crisis in the fictional democrac
 # Assignment_Breakdown
 The task involves designing and implementing several key classes to model the interactions and decision-making in the simulation. The main classes and their roles are as follows:
 
-Parser: Reads and processes data from the JSON configuration file.
+Parser: Reads and processes data from the JSON configuration file.  
 Simulation: Coordinates the overall simulation flow and manages its resources.
 Graph: Models the structure where parties are represented as vertices, and connections between them are the edges.
 Party: Represents a political entity in the graph with attributes such as id, name, mandates, join policies, and current state.
