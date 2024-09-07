@@ -18,7 +18,7 @@ The simulation starts by initializing the setup, goes through each iteration ste
 # Configuration File Format
 
 The program takes a configuration file in JSON format as input. The file contains information about parties, the graph, and agents. The structure of the configuration file is as follows:  
-
+```cpp
 {  
   "parties": [  
     {  
@@ -50,4 +50,6 @@ The program takes a configuration file in JSON format as input. The file contain
     },  
     ...  
   ]  
-}  
+}
+```
+
